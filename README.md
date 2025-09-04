@@ -1,116 +1,500 @@
-🧠 ANN on Breast Cancer Dataset
-📌 Project Overview
+# 🚀 AI Engineer Path
 
-This project builds an Artificial Neural Network (ANN) to classify breast cancer tumors as benign (0) or malignant (1) using the Breast Cancer dataset from scikit-learn.
-It’s a beginner-friendly but professional deep learning project, showcasing the full ML workflow from preprocessing to model evaluation.
+This repository documents my **10-week journey** to becoming an **AI/ML Engineer**, targeting top MNCs like **Google, NVIDIA, OpenAI, and Microsoft**.  
 
+It contains step-by-step projects covering **Machine Learning, Deep Learning, Model Deployment, MLOps, and Cloud (AWS)**.  
+Each project is fully documented with **Jupyter Notebooks, requirements, and results**.  
 
-📂 Project Structure
-WEEK1/
- └── ANN_BreastCancer/
-     ├── ann_breast_cancer.ipynb   # Main Jupyter Notebook
-     ├── requirements.txt          # Dependencies
-     └── README.md                 # Project documentation
+---
 
+## 📂 Weekly Progress
 
+### ✅ WEEK 1 – Artificial Neural Networks (ANN)
+- [Breast Cancer Classification](./WEEK1/ANN_BreastCancer)  
+- Wine Quality Classification (coming next)  
 
-🚀 Steps
-Step 1: Imports
+### ⏳ WEEK 2 – Convolutional Neural Networks (CNN)
+- MNIST Digit Classifier (planned)  
+- CIFAR-10 Image Classifier (planned)  
 
-NumPy, Pandas → Data handling
-Matplotlib, Seaborn → Visualization
+### ⏳ WEEK 3 – Recurrent Neural Networks (RNN/LSTM)
+- Stock Price Prediction (planned)  
 
-Scikit-learn → Dataset loading, preprocessing, evaluation
+... more weeks coming soon 🚀  
 
-TensorFlow/Keras → Building & training the ANN
+---
 
+## 🧠 Skills Covered
+- ✅ Supervised ML & Data Preprocessing  
+- ✅ Deep Learning (ANN, CNN, LSTM)  
+- ✅ Model Deployment (Flask, FastAPI, Docker)  
+- ✅ Cloud (AWS) & MLOps  
+- ✅ AI Safety & Generative AI  
 
+---
 
-Step 2: Load & Preprocess Data
+## 🛠️ Tech Stack
+- Python, NumPy, Pandas, Scikit-learn  
+- TensorFlow / Keras  
+- Matplotlib, Seaborn  
+- Flask / FastAPI / Docker  
+- AWS (planned)  
 
-Dataset: Breast Cancer dataset (30 features, binary labels)
+---
 
-Split: 80% Train, 20% Test
+## ⚙️ How to Run Any Project
 
-Preprocessing: StandardScaler → ensures features have mean=0, std=1
+1. Clone this repository:  
+```bash
+git clone https://github.com/YOUR-USERNAME/AI-Engineer-Path.git
+cd AI-Engineer-Path
+# 🚀 AI Engineer Path
 
+This repository documents my **10-week journey** to becoming an **AI/ML Engineer**, targeting top MNCs like **Google, NVIDIA, OpenAI, and Microsoft**.  
 
+It contains step-by-step projects covering **Machine Learning, Deep Learning, Model Deployment, MLOps, and Cloud (AWS)**.  
+Each project is fully documented with **Jupyter Notebooks, requirements, and results**.  
 
-Step 3: Build ANN Model
+---
 
-Input Layer → 30 features
+## 📂 Weekly Progress
 
-Hidden Layer 1 → 32 neurons, ReLU activation
+### ✅ WEEK 1 – Artificial Neural Networks (ANN)
+- [Breast Cancer Classification](./WEEK1/ANN_BreastCancer)  
+- Wine Quality Classification (coming next)  
 
-Dropout → 20% (reduce overfitting)
+### ⏳ WEEK 2 – Convolutional Neural Networks (CNN)
+- MNIST Digit Classifier (planned)  
+- CIFAR-10 Image Classifier (planned)  
 
-Hidden Layer 2 → 16 neurons, ReLU activation
+### ⏳ WEEK 3 – Recurrent Neural Networks (RNN/LSTM)
+- Stock Price Prediction (planned)  
 
-Output Layer → 1 neuron, Sigmoid activation (binary classification)
+... more weeks coming soon 🚀  
 
-Compilation:
+---
 
-Optimizer: Adam
+## 🧠 Skills Covered
+- ✅ Supervised ML & Data Preprocessing  
+- ✅ Deep Learning (ANN, CNN, LSTM)  
+- ✅ Model Deployment (Flask, FastAPI, Docker)  
+- ✅ Cloud (AWS) & MLOps  
+- ✅ AI Safety & Generative AI  
 
-Loss: Binary Crossentropy
+---
 
-Metric: Accuracy
+## 🛠️ Tech Stack
+- Python, NumPy, Pandas, Scikit-learn  
+- TensorFlow / Keras  
+- Matplotlib, Seaborn  
+- Flask / FastAPI / Docker  
+- AWS (planned)  
 
+---
 
+## ⚙️ How to Run Any Project
 
-Step 4: Train Model
+1. Clone this repository:  
+```bash
+git clone https://github.com/YOUR-USERNAME/AI-Engineer-Path.git
+cd AI-Engineer-Path
+# 🚀 AI Engineer Path
 
-Epochs: 50
+This repository documents my **10-week journey** to becoming an **AI/ML Engineer**, targeting top MNCs like **Google, NVIDIA, OpenAI, and Microsoft**.  
 
-Batch size: 32
+It contains step-by-step projects covering **Machine Learning, Deep Learning, Model Deployment, MLOps, and Cloud (AWS)**.  
+Each project is fully documented with **Jupyter Notebooks, requirements, and results**.  
 
-Validation split: 20%
+---
 
+## 📂 Weekly Progress
 
+### ✅ WEEK 1 – Artificial Neural Networks (ANN)
+- [Breast Cancer Classification](./WEEK1/ANN_BreastCancer)  
+- Wine Quality Classification (coming next)  
 
-Step 5: Evaluate Model
+### ⏳ WEEK 2 – Convolutional Neural Networks (CNN)
+- MNIST Digit Classifier (planned)  
+- CIFAR-10 Image Classifier (planned)  
 
-Accuracy Score
+### ⏳ WEEK 3 – Recurrent Neural Networks (RNN/LSTM)
+- Stock Price Prediction (planned)  
 
-Classification Report (Precision, Recall, F1-score)
+... more weeks coming soon 🚀  
 
-Confusion Matrix (visualized with heatmap)
+---
 
-Step 6: Training History Visualization
+## 🧠 Skills Covered
+- ✅ Supervised ML & Data Preprocessing  
+- ✅ Deep Learning (ANN, CNN, LSTM)  
+- ✅ Model Deployment (Flask, FastAPI, Docker)  
+- ✅ Cloud (AWS) & MLOps  
+- ✅ AI Safety & Generative AI  
 
-Training vs Validation Accuracy curve
+---
 
-Training vs Validation Loss curve
+## 🛠️ Tech Stack
+- Python, NumPy, Pandas, Scikit-learn  
+- TensorFlow / Keras  
+- Matplotlib, Seaborn  
+- Flask / FastAPI / Docker  
+- AWS (planned)  
 
-📊 Results
+---
 
-Achieved ~95-97% accuracy on test set
+## ⚙️ How to Run Any Project
 
-Balanced precision & recall
+1. Clone this repository:  
+```bash
+git clone https://github.com/YOUR-USERNAME/AI-Engineer-Path.git
+cd AI-Engineer-Path
+# 🚀 AI Engineer Path
 
-Clear separation in confusion matrix
+This repository documents my **10-week journey** to becoming an **AI/ML Engineer**, targeting top MNCs like **Google, NVIDIA, OpenAI, and Microsoft**.  
 
+It contains step-by-step projects covering **Machine Learning, Deep Learning, Model Deployment, MLOps, and Cloud (AWS)**.  
+Each project is fully documented with **Jupyter Notebooks, requirements, and results**.  
 
+---
 
-🛠️ Installation & Setup
-# Create conda environment
-conda create -n week1 python=3.10 -y
-conda activate week1
+## 📂 Weekly Progress
 
-# Install dependencies
-pip install -r requirements.txt
+### ✅ WEEK 1 – Artificial Neural Networks (ANN)
+- [Breast Cancer Classification](./WEEK1/ANN_BreastCancer)  
+- Wine Quality Classification (coming next)  
 
-# Run Jupyter Notebook
-jupyter notebook
+### ⏳ WEEK 2 – Convolutional Neural Networks (CNN)
+- MNIST Digit Classifier (planned)  
+- CIFAR-10 Image Classifier (planned)  
 
+### ⏳ WEEK 3 – Recurrent Neural Networks (RNN/LSTM)
+- Stock Price Prediction (planned)  
 
+... more weeks coming soon 🚀  
 
-📌 Learning Outcomes
+---
 
-✅ Understand ANN basics (layers, activation, optimizer, loss)
-✅ Practice preprocessing pipeline (scaling, splitting)
-✅ Build, train, and evaluate a neural network in Keras
-✅ Visualize model performance (confusion matrix, accuracy/loss curves)
-✅ Prepare a clean, portfolio-ready deep learning project
+## 🧠 Skills Covered
+- ✅ Supervised ML & Data Preprocessing  
+- ✅ Deep Learning (ANN, CNN, LSTM)  
+- ✅ Model Deployment (Flask, FastAPI, Docker)  
+- ✅ Cloud (AWS) & MLOps  
+- ✅ AI Safety & Generative AI  
 
-🔥 This project is part of my 10-week AI Engineer Roadmap, targeting top MNCs.
+---
+
+## 🛠️ Tech Stack
+- Python, NumPy, Pandas, Scikit-learn  
+- TensorFlow / Keras  
+- Matplotlib, Seaborn  
+- Flask / FastAPI / Docker  
+- AWS (planned)  
+
+---
+
+## ⚙️ How to Run Any Project
+
+1. Clone this repository:  
+```bash
+git clone https://github.com/YOUR-USERNAME/AI-Engineer-Path.git
+cd AI-Engineer-Path
+# 🚀 AI Engineer Path
+
+This repository documents my **10-week journey** to becoming an **AI/ML Engineer**, targeting top MNCs like **Google, NVIDIA, OpenAI, and Microsoft**.  
+
+It contains step-by-step projects covering **Machine Learning, Deep Learning, Model Deployment, MLOps, and Cloud (AWS)**.  
+Each project is fully documented with **Jupyter Notebooks, requirements, and results**.  
+
+---
+
+## 📂 Weekly Progress
+
+### ✅ WEEK 1 – Artificial Neural Networks (ANN)
+- [Breast Cancer Classification](./WEEK1/ANN_BreastCancer)  
+- Wine Quality Classification (coming next)  
+
+### ⏳ WEEK 2 – Convolutional Neural Networks (CNN)
+- MNIST Digit Classifier (planned)  
+- CIFAR-10 Image Classifier (planned)  
+
+### ⏳ WEEK 3 – Recurrent Neural Networks (RNN/LSTM)
+- Stock Price Prediction (planned)  
+
+... more weeks coming soon 🚀  
+
+---
+
+## 🧠 Skills Covered
+- ✅ Supervised ML & Data Preprocessing  
+- ✅ Deep Learning (ANN, CNN, LSTM)  
+- ✅ Model Deployment (Flask, FastAPI, Docker)  
+- ✅ Cloud (AWS) & MLOps  
+- ✅ AI Safety & Generative AI  
+
+---
+
+## 🛠️ Tech Stack
+- Python, NumPy, Pandas, Scikit-learn  
+- TensorFlow / Keras  
+- Matplotlib, Seaborn  
+- Flask / FastAPI / Docker  
+- AWS (planned)  
+
+---
+
+## ⚙️ How to Run Any Project
+
+1. Clone this repository:  
+```bash
+git clone https://github.com/YOUR-USERNAME/AI-Engineer-Path.git
+cd AI-Engineer-Path
+# 🚀 AI Engineer Path
+
+This repository documents my **10-week journey** to becoming an **AI/ML Engineer**, targeting top MNCs like **Google, NVIDIA, OpenAI, and Microsoft**.  
+
+It contains step-by-step projects covering **Machine Learning, Deep Learning, Model Deployment, MLOps, and Cloud (AWS)**.  
+Each project is fully documented with **Jupyter Notebooks, requirements, and results**.  
+
+---
+
+## 📂 Weekly Progress
+
+### ✅ WEEK 1 – Artificial Neural Networks (ANN)
+- [Breast Cancer Classification](./WEEK1/ANN_BreastCancer)  
+- Wine Quality Classification (coming next)  
+
+### ⏳ WEEK 2 – Convolutional Neural Networks (CNN)
+- MNIST Digit Classifier (planned)  
+- CIFAR-10 Image Classifier (planned)  
+
+### ⏳ WEEK 3 – Recurrent Neural Networks (RNN/LSTM)
+- Stock Price Prediction (planned)  
+
+... more weeks coming soon 🚀  
+
+---
+
+## 🧠 Skills Covered
+- ✅ Supervised ML & Data Preprocessing  
+- ✅ Deep Learning (ANN, CNN, LSTM)  
+- ✅ Model Deployment (Flask, FastAPI, Docker)  
+- ✅ Cloud (AWS) & MLOps  
+- ✅ AI Safety & Generative AI  
+
+---
+
+## 🛠️ Tech Stack
+- Python, NumPy, Pandas, Scikit-learn  
+- TensorFlow / Keras  
+- Matplotlib, Seaborn  
+- Flask / FastAPI / Docker  
+- AWS (planned)  
+
+---
+
+## ⚙️ How to Run Any Project
+
+1. Clone this repository:  
+```bash
+git clone https://github.com/YOUR-USERNAME/AI-Engineer-Path.git
+cd AI-Engineer-Path
+# 🚀 AI Engineer Path
+
+This repository documents my **10-week journey** to becoming an **AI/ML Engineer**, targeting top MNCs like **Google, NVIDIA, OpenAI, and Microsoft**.  
+
+It contains step-by-step projects covering **Machine Learning, Deep Learning, Model Deployment, MLOps, and Cloud (AWS)**.  
+Each project is fully documented with **Jupyter Notebooks, requirements, and results**.  
+
+---
+
+## 📂 Weekly Progress
+
+### ✅ WEEK 1 – Artificial Neural Networks (ANN)
+- [Breast Cancer Classification](./WEEK1/ANN_BreastCancer)  
+- Wine Quality Classification (coming next)  
+
+### ⏳ WEEK 2 – Convolutional Neural Networks (CNN)
+- MNIST Digit Classifier (planned)  
+- CIFAR-10 Image Classifier (planned)  
+
+### ⏳ WEEK 3 – Recurrent Neural Networks (RNN/LSTM)
+- Stock Price Prediction (planned)  
+
+... more weeks coming soon 🚀  
+
+---
+
+## 🧠 Skills Covered
+- ✅ Supervised ML & Data Preprocessing  
+- ✅ Deep Learning (ANN, CNN, LSTM)  
+- ✅ Model Deployment (Flask, FastAPI, Docker)  
+- ✅ Cloud (AWS) & MLOps  
+- ✅ AI Safety & Generative AI  
+
+---
+
+## 🛠️ Tech Stack
+- Python, NumPy, Pandas, Scikit-learn  
+- TensorFlow / Keras  
+- Matplotlib, Seaborn  
+- Flask / FastAPI / Docker  
+- AWS (planned)  
+
+---
+
+## ⚙️ How to Run Any Project
+
+1. Clone this repository:  
+```bash
+git clone https://github.com/YOUR-USERNAME/AI-Engineer-Path.git
+cd AI-Engineer-Path
+# 🚀 AI Engineer Path
+
+This repository documents my **10-week journey** to becoming an **AI/ML Engineer**, targeting top MNCs like **Google, NVIDIA, OpenAI, and Microsoft**.  
+
+It contains step-by-step projects covering **Machine Learning, Deep Learning, Model Deployment, MLOps, and Cloud (AWS)**.  
+Each project is fully documented with **Jupyter Notebooks, requirements, and results**.  
+
+---
+
+## 📂 Weekly Progress
+
+### ✅ WEEK 1 – Artificial Neural Networks (ANN)
+- [Breast Cancer Classification](./WEEK1/ANN_BreastCancer)  
+- Wine Quality Classification (coming next)  
+
+### ⏳ WEEK 2 – Convolutional Neural Networks (CNN)
+- MNIST Digit Classifier (planned)  
+- CIFAR-10 Image Classifier (planned)  
+
+### ⏳ WEEK 3 – Recurrent Neural Networks (RNN/LSTM)
+- Stock Price Prediction (planned)  
+
+... more weeks coming soon 🚀  
+
+---
+
+## 🧠 Skills Covered
+- ✅ Supervised ML & Data Preprocessing  
+- ✅ Deep Learning (ANN, CNN, LSTM)  
+- ✅ Model Deployment (Flask, FastAPI, Docker)  
+- ✅ Cloud (AWS) & MLOps  
+- ✅ AI Safety & Generative AI  
+
+---
+
+## 🛠️ Tech Stack
+- Python, NumPy, Pandas, Scikit-learn  
+- TensorFlow / Keras  
+- Matplotlib, Seaborn  
+- Flask / FastAPI / Docker  
+- AWS (planned)  
+
+---
+
+## ⚙️ How to Run Any Project
+
+1. Clone this repository:  
+```bash
+git clone https://github.com/YOUR-USERNAME/AI-Engineer-Path.git
+cd AI-Engineer-Path
+# 🚀 AI Engineer Path
+
+This repository documents my **10-week journey** to becoming an **AI/ML Engineer**, targeting top MNCs like **Google, NVIDIA, OpenAI, and Microsoft**.  
+
+It contains step-by-step projects covering **Machine Learning, Deep Learning, Model Deployment, MLOps, and Cloud (AWS)**.  
+Each project is fully documented with **Jupyter Notebooks, requirements, and results**.  
+
+---
+
+## 📂 Weekly Progress
+
+### ✅ WEEK 1 – Artificial Neural Networks (ANN)
+- [Breast Cancer Classification](./WEEK1/ANN_BreastCancer)  
+- Wine Quality Classification (coming next)  
+
+### ⏳ WEEK 2 – Convolutional Neural Networks (CNN)
+- MNIST Digit Classifier (planned)  
+- CIFAR-10 Image Classifier (planned)  
+
+### ⏳ WEEK 3 – Recurrent Neural Networks (RNN/LSTM)
+- Stock Price Prediction (planned)  
+
+... more weeks coming soon 🚀  
+
+---
+
+## 🧠 Skills Covered
+- ✅ Supervised ML & Data Preprocessing  
+- ✅ Deep Learning (ANN, CNN, LSTM)  
+- ✅ Model Deployment (Flask, FastAPI, Docker)  
+- ✅ Cloud (AWS) & MLOps  
+- ✅ AI Safety & Generative AI  
+
+---
+
+## 🛠️ Tech Stack
+- Python, NumPy, Pandas, Scikit-learn  
+- TensorFlow / Keras  
+- Matplotlib, Seaborn  
+- Flask / FastAPI / Docker  
+- AWS (planned)  
+
+---
+
+## ⚙️ How to Run Any Project
+
+1. Clone this repository:  
+```bash
+git clone https://github.com/YOUR-USERNAME/AI-Engineer-Path.git
+cd AI-Engineer-Path
+# 🚀 AI Engineer Path
+
+This repository documents my **10-week journey** to becoming an **AI/ML Engineer**, targeting top MNCs like **Google, NVIDIA, OpenAI, and Microsoft**.  
+
+It contains step-by-step projects covering **Machine Learning, Deep Learning, Model Deployment, MLOps, and Cloud (AWS)**.  
+Each project is fully documented with **Jupyter Notebooks, requirements, and results**.  
+
+---
+
+## 📂 Weekly Progress
+
+### ✅ WEEK 1 – Artificial Neural Networks (ANN)
+- [Breast Cancer Classification](./WEEK1/ANN_BreastCancer)  
+- Wine Quality Classification (coming next)  
+
+### ⏳ WEEK 2 – Convolutional Neural Networks (CNN)
+- MNIST Digit Classifier (planned)  
+- CIFAR-10 Image Classifier (planned)  
+
+### ⏳ WEEK 3 – Recurrent Neural Networks (RNN/LSTM)
+- Stock Price Prediction (planned)  
+
+... more weeks coming soon 🚀  
+
+---
+
+## 🧠 Skills Covered
+- ✅ Supervised ML & Data Preprocessing  
+- ✅ Deep Learning (ANN, CNN, LSTM)  
+- ✅ Model Deployment (Flask, FastAPI, Docker)  
+- ✅ Cloud (AWS) & MLOps  
+- ✅ AI Safety & Generative AI  
+
+---
+
+## 🛠️ Tech Stack
+- Python, NumPy, Pandas, Scikit-learn  
+- TensorFlow / Keras  
+- Matplotlib, Seaborn  
+- Flask / FastAPI / Docker  
+- AWS (planned)  
+
+---
+
+## ⚙️ How to Run Any Project
+
+1. Clone this repository:  
+```bash
+git clone https://github.com/YOUR-USERNAME/AI-Engineer-Path.git
+cd AI-Engineer-Path
