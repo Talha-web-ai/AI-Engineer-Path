@@ -27,3 +27,28 @@ This project implements a **Convolutional Neural Network (CNN)** to classify han
 Install dependencies:
 ```bash
 pip install -r requirements.txt
+
+
+🚀 Training
+
+Run the notebook:
+jupyter notebook CNN_MNIST.ipynb
+
+
+Training config:
+
+Optimizer: adam
+Loss: categorical_crossentropy
+Epochs: 5
+Batch size: 128
+Validation split: 0.1
+
+📊 Results
+Test Accuracy: ~98%
+
+
+📂 Project Structure
+cnn-mnist/
+├── README.md
+├── requirements.txt
+└── CNN_MNIST.ipynb
