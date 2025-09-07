@@ -1,0 +1,24 @@
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Temporary Jupyter notebooks
+Untitled.ipynb
+*.ipynb_checkpoints/
+
+# Model files
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# VSCode settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
