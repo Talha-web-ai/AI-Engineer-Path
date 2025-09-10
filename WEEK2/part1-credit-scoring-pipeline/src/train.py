@@ -3,9 +3,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+from sklearn.pipeline import Pipeline
 import json
 import logging
 import os
+import joblib
 
 # ----------------------------
 # Setup logging
@@ -29,7 +31,7 @@ except Exception as e:
 # ----------------------------
 # Split features & target
 # ----------------------------
-X = data.drop("default", axis=1)
+X = data.drop("default", axis=1)   # 👈 using "default" as target
 y = data["default"]
 
 X_train, X_test, y_train, y_test = train_test_split(
@@ -38,24 +40,23 @@ X_train, X_test, y_train, y_test = train_test_split(
 logging.info(f'Data split into train ({X_train.shape}) and test ({X_test.shape}) sets')
 
 # ----------------------------
-# Scale features
+# Build pipeline (scaler + model)
 # ----------------------------
-scaler = StandardScaler()
-X_train_scaled = scaler.fit_transform(X_train)
-X_test_scaled = scaler.transform(X_test)
-logging.info('Feature scaling applied')
+pipeline = Pipeline([
+    ("scaler", StandardScaler()),
+    ("model", RandomForestClassifier(n_estimators=100, random_state=42))
+])
 
 # ----------------------------
 # Train model
 # ----------------------------
-model = RandomForestClassifier(n_estimators=100, random_state=42)
-model.fit(X_train_scaled, y_train)
-logging.info('RandomForestClassifier trained successfully')
+pipeline.fit(X_train, y_train)
+logging.info('RandomForestClassifier trained successfully (via pipeline)')
 
 # ----------------------------
 # Evaluate model
 # ----------------------------
-y_pred = model.predict(X_test_scaled)
+y_pred = pipeline.predict(X_test)
 
 metrics = {
     "accuracy": accuracy_score(y_test, y_pred),
@@ -75,10 +76,8 @@ with open(metrics_path, 'w') as f:
 logging.info(f'Metrics saved to {metrics_path}')
 
 # ----------------------------
-# Optional: Save model & scaler for future use
+# Save pipeline model
 # ----------------------------
-import joblib
 os.makedirs('models', exist_ok=True)
-joblib.dump(model, 'models/credit_model.pkl')
-joblib.dump(scaler, 'models/scaler.pkl')
-logging.info('Model and scaler saved to models/')
+joblib.dump(pipeline, 'models/credit_model.pkl')
+logging.info('Pipeline (scaler + model) saved to models/credit_model.pkl')
