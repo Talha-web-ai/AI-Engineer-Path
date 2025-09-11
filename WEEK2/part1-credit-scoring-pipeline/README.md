@@ -1,70 +1,74 @@
-# Credit Scoring Pipeline (Day 1 Project)
+# Credit Scoring Pipeline (Week 2 - Part 1)
 
-A simple ML pipeline for predicting credit default using Random Forest.  
-Includes feature scaling, model training, metrics tracking, and logging.
+## 📌 Overview
+This project implements a **credit scoring pipeline** with:
+- ETL (data cleaning & feature preparation)
+- Model training (Random Forest Classifier)
+- Evaluation (Accuracy, Precision, Recall, F1)
+- Deployment via **Flask API** (`/predict` endpoint)
+
+This marks the completion of **Week 2, Part 1** in my AI Engineer Roadmap.
 
 ---
 
-## 📁 Project Structure
-
+## ⚙️ Project Structure
 part1-credit-scoring-pipeline/
 ├── data/
-│ └── credit_data.csv # Input dataset
+│ └── raw/credit_data.csv
 ├── models/
-│ ├── credit_model.pkl # Trained model
-│ └── scaler.pkl # Feature scaler
-├── train.py # Main training script
-├── metrics.json # Model performance metrics
-├── train.log # Log file for training process
-├── README.md
-└── requirements.txt
+│ └── model.pkl
+├── src/
+│ ├── etl.py
+│ ├── train.py
+│ ├── evaluate.py
+│ └── app.py
+├── train.log
+├── evaluate.log
+└── README.md
+
+  
+Create virtual environment :
+  
+python -m venv .venv
+source .venv/bin/activate   # Linux/Mac
+.venv\Scripts\activate      # Windows
 
 
-## ⚙️ Setup
-
-1. **Clone the repo**
-```bash
-git clone <repo_url>
-cd part1-credit-scoring-pipeline
-Create a virtual environment (optional but recommended)
-
-
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
-
-
-Install dependencies
-
+Install dependencies:
 pip install -r requirements.txt
 
-🚀 Run Training
+🧩 Usage
+1. Run ETL
+python src/etl.py
 
+2. Train model
+python src/train.py
 
-python train.py
+3. Evaluate model
+python src/evaluate.py
 
-What happens:
+4. Start API
+python src/app.py
+Now API is running at: http://127.0.0.1:5000
 
-Loads credit_data.csv
-Splits into train/test sets
-Scales features
-Trains Random Forest
-Logs all steps to train.log
-Saves metrics to metrics.json
-Saves model & scaler in models/
+📡 API Example
+Request:
+  
+curl -X POST -H "Content-Type: application/json" \
+-d '{"age": 35, "income": 50000, "loan_amount": 12000}' \
+http://127.0.0.1:5000/predict
 
-📊 Output
-Metrics: metrics.json
+Response:
 
 json
-Copy code
-{
-    "accuracy": 0.95,
-    "precision": 0.92,
-    "recall": 0.90,
-    "f1_score": 0.91
-}
-Logs: train.log
+  
+{"prediction": 0}
 
-Model & Scaler: models/credit_model.pkl, models/scaler.pkl
+## 🏗️ Architecture Diagram
+![Pipeline Diagram](diagram.png)
 
+
+📖 Logs
+Training log: train.log
+
+Evaluation log: evaluate.log
