@@ -1,0 +1,16 @@
+// Credit Scoring Pipeline
+digraph {
+	A [label="Raw Data (CSV)" shape=folder]
+	B [label="ETL
+(data cleaning, features)" shape=box]
+	C [label="Model Training
+(Random Forest)" shape=box]
+	D [label="Evaluation
+(Accuracy, Precision, Recall, F1)" shape=box]
+	E [label="Flask API
+(/predict endpoint)" shape=cylinder]
+	A -> B
+	B -> C
+	C -> D
+	C -> E [label="model.pkl"]
+}
