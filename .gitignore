@@ -1,24 +1,60 @@
-# Jupyter Notebook checkpoints
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter
 .ipynb_checkpoints/
 
-# Temporary Jupyter notebooks
-Untitled.ipynb
-*.ipynb_checkpoints/
+# -------------------------
+# Testing
+# -------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
 
-# Model files
-*.h5
-*.hdf5
-*.pkl
-*.joblib
+# -------------------------
+# FastAPI / Config
+# -------------------------
+.env
+*.db
+*.sqlite3
 
-# Python cache
-__pycache__/
-*.pyc
-*.pyo
+# -------------------------
+# Docker
+# -------------------------
+*.pid
+*.seed
+*.tar
+*.bak
 
-# VSCode settings
+# -------------------------
+# IDE / Editors
+# -------------------------
 .vscode/
+.idea/
+*.swp
+*.swo
 
-# OS files
-.DS_Store
-Thumbs.db
+# -------------------------
+# Project-specific
+# -------------------------
+sample_b64.txt
+diagram.png
